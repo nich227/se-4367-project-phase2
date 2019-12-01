@@ -87,9 +87,9 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
         System.out.println("OPCODE-" + opcode + "\t" + var_type + "-TYPE");
 
         if((int)char_type != 0) {
-            mv.visitMethodInsn(INVOKESTATIC, var_type, "valueOf", "(" + char_type + ")L" + var_type + ";", false);
+            mv.visitMethodInsn(INVOKEVIRTUAL, var_type, "valueOf", "(" + char_type + ")L" + var_type + ";", false);
         }
-        mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addVariable", "(Ljava/lang/Object;)V", false);
+        mv.visitMethodInsn(INVOKEVIRTUAL, "agent/CollectCoverage", "addVariable", "(Ljava/lang/String;Ljava/lang/Integer)V", false);
 
         super.visitVarInsn(opcode, var);
     }

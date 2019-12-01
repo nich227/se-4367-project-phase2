@@ -2,6 +2,7 @@ package agent;
 
 import it.unimi.dsi.fastutil.ints.IntLinkedOpenHashSet;
 import org.junit.runner.Description;
+import org.junit.runner.notification.Failure;
 import org.junit.runner.Result;
 import org.junit.runner.notification.RunListener;
 
@@ -22,6 +23,10 @@ public class JUnitListener extends RunListener {
 		System.out.println("\n-----\nStarting - " + description.getMethodName());
 		CollectCoverage.testName = "[TEST]" + description.getClassName() + ":" + description.getMethodName();
 		CollectCoverage.linesCovered = new HashMap<String, IntLinkedOpenHashSet>();
+	}
+
+	public void testFailure(Failure failure) throws Exception {
+		System.err.println("FAILURE: " + failure);
 	}
 
 	public void testFinished(Description description) {
