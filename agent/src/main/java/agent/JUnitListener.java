@@ -9,20 +9,27 @@ import org.junit.runner.notification.RunListener;
 import java.io.*;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class JUnitListener extends RunListener {
 
 	public void testRunStarted(Description description) throws Exception {
 
 		if (CollectCoverage.testCases == null) {
-			CollectCoverage.testCases = new HashMap<String, HashMap<String, IntLinkedOpenHashSet>>();
+			CollectCoverage.testCases = new HashMap<>();
+		}
+		
+		if(CollectCoverage.testVars == null) {
+			CollectCoverage.testVars = new HashMap<>();
 		}
 	}
 
 	public void testStarted(Description description) {
 		System.out.println("\n-----\nStarting - " + description.getMethodName());
 		CollectCoverage.testName = "[TEST]" + description.getClassName() + ":" + description.getMethodName();
-		CollectCoverage.linesCovered = new HashMap<String, IntLinkedOpenHashSet>();
+		CollectCoverage.linesCovered = new HashMap<>();
+		CollectCoverage.visitedVars = new HashSet<>();
+		CollectCoverage.variableMap = new HashMap<>();
 	}
 
 	public void testFailure(Failure failure) throws Exception {
@@ -32,31 +39,40 @@ public class JUnitListener extends RunListener {
 	public void testFinished(Description description) {
 		System.out.println("Finished - " + description.getMethodName());
 		CollectCoverage.testCases.put(CollectCoverage.testName, CollectCoverage.linesCovered);
+		CollectCoverage.testVars.put(CollectCoverage.testName, CollectCoverage.variableMap);
 	}
 
 	public void testRunFinished(Result result) throws IOException {
-		System.out.println("Test done\n\n\n\nResults:");
+		System.out.println("Test done");
 
 		File fout = new File("stmt-cov.txt");
 		StringBuilder str_builder = new StringBuilder();
 		FileOutputStream fos = new FileOutputStream(fout);
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
 		
-		
+		str_builder.append("Line coverage:\n");
 		for (String testCaseName : CollectCoverage.testCases.keySet()) {
-			//System.out.print("Test case: " + testCaseName);
 			str_builder.append(testCaseName + "\n");
 
 			HashMap<String, IntLinkedOpenHashSet> caseCoverage = CollectCoverage.testCases.get(testCaseName);
-			//System.out.println(Arrays.asList(caseCoverage));
 
 			for (String cName : caseCoverage.keySet()) {
 				int[] lines = caseCoverage.get(cName).toIntArray();
 				Arrays.sort(lines);
-				//System.out.println(Arrays.toString(lines));
 				for (int line : lines) {
 					str_builder.append(cName + ":" + line + "\n");
 				}
+			}
+		}
+		
+		str_builder.append("\n\n\n\n\n");
+		
+		str_builder.append("Possible invariants:\n");
+		for (String testCaseName : CollectCoverage.testVars.keySet()) {
+			str_builder.append(testCaseName + "\n");
+
+			for (Integer index : CollectCoverage.testVars.get(testCaseName).keySet()) {
+				str_builder.append(index + ":" + CollectCoverage.testVars.get(testCaseName).get(index) + "\n");
 			}
 		}
 

@@ -1,6 +1,8 @@
 package agent;
 
 import java.util.HashMap;
+import java.util.Set;
+
 import it.unimi.dsi.fastutil.ints.IntLinkedOpenHashSet;
 
 public class CollectCoverage {
@@ -9,7 +11,9 @@ public class CollectCoverage {
 	public static HashMap<String, HashMap<String, IntLinkedOpenHashSet>> testCases;
 	public static String testName;
 
-	// Accessors
+	public static HashMap<Integer, Object> variableMap;
+	public static Set<Integer> visitedVars;
+	public static HashMap<String, HashMap<Integer, Object>> testVars;
 
 	public static void addCoveredLine(String name, Integer line) {
 
@@ -29,25 +33,71 @@ public class CollectCoverage {
 			covered_lines.add(line);
 		}
 	}
-	
-	public static void addVariable(Integer var) {
-		System.out.println("Add variable int: " + var);
-	}
-	
-	public static void addVariable(Double var) {
-		System.out.println("Add variable double: " + var);
-	}
-	
-	public static void addVariable(Float var) {
-		System.out.println("Add variable float: " + var);
-	}
-	
-	public static void addVariable(Long var) {
-		System.out.println("Add variable long: " + var);
+
+	public static void addVariable(Integer val, Integer var) {
+
+		// If the variable map hasn't been initialized or this variable has already been
+		// visited
+		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
+			return;
+		visitedVars.add(var);
+
+		// If the variable map has no values for the specified var index
+		if (variableMap.get(var) == null) {
+			variableMap.put(var, val);
+		}
 	}
 
-	public static void addVariable(Object var) {
-		System.out.println("Add variable obj: " + var.toString());
+	public static void addVariable(Double val, Integer var) {
+		// If the variable map hasn't been initialized or this variable has already been
+		// visited
+		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
+			return;
+		visitedVars.add(var);
+
+		// If the variable map has no values for the specified var index
+		if (variableMap.get(var) == null) {
+			variableMap.put(var, val);
+		}
+	}
+
+	public static void addVariable(Float val, Integer var) {
+		// If the variable map hasn't been initialized or this variable has already been
+		// visited
+		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
+			return;
+		visitedVars.add(var);
+
+		// If the variable map has no values for the specified var index
+		if (variableMap.get(var) == null) {
+			variableMap.put(var, val);
+		}
+	}
+
+	public static void addVariable(Long val, Integer var) {
+		// If the variable map hasn't been initialized or this variable has already been
+		// visited
+		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
+			return;
+		visitedVars.add(var);
+
+		// If the variable map has no values for the specified var index
+		if (variableMap.get(var) == null) {
+			variableMap.put(var, val);
+		}
+	}
+
+	public static void addVariable(Object val, Integer var) {
+		// If the variable map hasn't been initialized or this variable has already been
+		// visited
+		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
+			return;
+		visitedVars.add(var);
+
+		// If the variable map has no values for the specified var index
+		if (variableMap.get(var) == null) {
+			variableMap.put(var, val);
+		}
 	}
 
 }

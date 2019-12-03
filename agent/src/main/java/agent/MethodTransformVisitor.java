@@ -4,19 +4,14 @@ import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
-import java.util.HashSet;
-import java.util.Set;
-
 class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 	String mName;
 	int line;
-	Set<Integer> visited_vars;
 
 	public MethodTransformVisitor(final MethodVisitor mv, String name) {
 		super(ASM5, mv);
 		this.mName = name;
-		this.visited_vars = new HashSet<Integer>();
 	}
 
 	// statement coverage collection
@@ -53,7 +48,7 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 	// Visits a variable instruction
 	@Override
 	public void visitVarInsn(int opcode, int index) {
-		if (visited_vars.contains(index) || index == 0) {
+		if (index == 0) {
 			super.visitVarInsn(opcode, index);
 			return;
 		}
@@ -79,14 +74,15 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 			super.visitVarInsn(opcode, index);
 			return;
 		}
-
-		visited_vars.add(index);
+		
 		mv.visitVarInsn(opcode, index);
 
 		if (var_type != "java/lang/Object") {
 			mv.visitMethodInsn(INVOKESTATIC, var_type, "valueOf", "(" + char_type + ")L" + var_type + ";", false);
 		}
-		mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addVariable", "(L" + var_type + ";)V", false);
+		mv.visitLdcInsn(index);
+		mv.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+		mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addVariable", "(L" + var_type + ";Ljava/lang/Integer;)V", false);
 
 		super.visitVarInsn(opcode, index);
 	}
