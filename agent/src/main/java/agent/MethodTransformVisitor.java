@@ -7,8 +7,6 @@ import org.objectweb.asm.Opcodes;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.objectweb.asm.FieldVisitor;
-
 class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 	String mName;
@@ -54,8 +52,9 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 	// Visits a variable instruction
 	@Override
-	public void visitVarInsn(int opcode, int var) {
-		if (visited_vars.contains(var)) {
+	public void visitVarInsn(int opcode, int index) {
+		if (visited_vars.contains(index) || index == 0) {
+			super.visitVarInsn(opcode, index);
 			return;
 		}
 
@@ -77,17 +76,18 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 		} else if (opcode == ALOAD) {
 			var_type = "java/lang/Object";
 		} else {
+			super.visitVarInsn(opcode, index);
 			return;
 		}
 
-		mv.visitVarInsn(opcode, var);
-		visited_vars.add(var);
+		visited_vars.add(index);
+		mv.visitVarInsn(opcode, index);
 
 		if (var_type != "java/lang/Object") {
 			mv.visitMethodInsn(INVOKESTATIC, var_type, "valueOf", "(" + char_type + ")L" + var_type + ";", false);
 		}
 		mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addVariable", "(L" + var_type + ";)V", false);
 
-		super.visitVarInsn(opcode, var);
+		super.visitVarInsn(opcode, index);
 	}
 }

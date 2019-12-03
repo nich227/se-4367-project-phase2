@@ -31,23 +31,23 @@ public class CollectCoverage {
 	}
 	
 	public static void addVariable(Integer var) {
-		System.out.println("Add variable int");
+		System.out.println("Add variable int: " + var);
 	}
 	
 	public static void addVariable(Double var) {
-		System.out.println("Add variable double");
+		System.out.println("Add variable double: " + var);
 	}
 	
 	public static void addVariable(Float var) {
-		System.out.println("Add variable float");
+		System.out.println("Add variable float: " + var);
 	}
 	
 	public static void addVariable(Long var) {
-		System.out.println("Add variable long");
+		System.out.println("Add variable long: " + var);
 	}
 
 	public static void addVariable(Object var) {
-		System.out.println("Add variable obj");
+		System.out.println("Add variable obj: " + var.toString());
 	}
 
 }
