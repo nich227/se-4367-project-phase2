@@ -1,4 +1,88 @@
 -------------------------------------------------------------------------------
 Test set: project.StuffTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in project.StuffTest
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.128 sec <<< FAILURE! - in project.StuffTest
+multiTest(project.StuffTest)  Time elapsed: 0.04 sec  <<< ERROR!
+java.lang.VerifyError: 
+Bad type on operand stack
+Exception Details:
+  Location:
+    project/Stuff.<init>()V @11: invokestatic
+  Reason:
+    Type uninitializedThis (current frame, stack[0]) is not assignable to 'java/lang/Object'
+  Current Frame:
+    bci: @11
+    flags: { flagThisUninit }
+    locals: { uninitializedThis }
+    stack: { uninitializedThis }
+  Bytecode:
+    0x0000000: 1208 1209 b800 0fb8 0015 2ab8 0019 2ab7
+    0x0000010: 001b b100 0000 0000 0000 0000 bf       
+  Stackmap Table:
+    full_frame(@19,{},{Object[#31]})
+
+	at project.StuffTest.multiTest(StuffTest.java:32)
+
+testStuff(project.StuffTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.VerifyError: 
+Bad type on operand stack
+Exception Details:
+  Location:
+    project/Stuff.<init>()V @11: invokestatic
+  Reason:
+    Type uninitializedThis (current frame, stack[0]) is not assignable to 'java/lang/Object'
+  Current Frame:
+    bci: @11
+    flags: { flagThisUninit }
+    locals: { uninitializedThis }
+    stack: { uninitializedThis }
+  Bytecode:
+    0x0000000: 1208 1209 b800 0fb8 0015 2ab8 0019 2ab7
+    0x0000010: 001b b100 0000 0000 0000 0000 bf       
+  Stackmap Table:
+    full_frame(@19,{},{Object[#31]})
+
+	at project.StuffTest.testStuff(StuffTest.java:12)
+
+twoTest(project.StuffTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.VerifyError: 
+Bad type on operand stack
+Exception Details:
+  Location:
+    project/Stuff.<init>()V @11: invokestatic
+  Reason:
+    Type uninitializedThis (current frame, stack[0]) is not assignable to 'java/lang/Object'
+  Current Frame:
+    bci: @11
+    flags: { flagThisUninit }
+    locals: { uninitializedThis }
+    stack: { uninitializedThis }
+  Bytecode:
+    0x0000000: 1208 1209 b800 0fb8 0015 2ab8 0019 2ab7
+    0x0000010: 001b b100 0000 0000 0000 0000 bf       
+  Stackmap Table:
+    full_frame(@19,{},{Object[#31]})
+
+	at project.StuffTest.twoTest(StuffTest.java:27)
+
+OneTest(project.StuffTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.VerifyError: 
+Bad type on operand stack
+Exception Details:
+  Location:
+    project/Stuff.<init>()V @11: invokestatic
+  Reason:
+    Type uninitializedThis (current frame, stack[0]) is not assignable to 'java/lang/Object'
+  Current Frame:
+    bci: @11
+    flags: { flagThisUninit }
+    locals: { uninitializedThis }
+    stack: { uninitializedThis }
+  Bytecode:
+    0x0000000: 1208 1209 b800 0fb8 0015 2ab8 0019 2ab7
+    0x0000010: 001b b100 0000 0000 0000 0000 bf       
+  Stackmap Table:
+    full_frame(@19,{},{Object[#31]})
+
+	at project.StuffTest.OneTest(StuffTest.java:22)
+

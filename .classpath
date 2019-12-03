@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=".history/agent/src/main/java"/>
+	<classpathentry kind="src" path="agent/.history/src/main/java"/>
+	<classpathentry kind="src" path="agent/src/main/java"/>
+	<classpathentry kind="src" path="commons-dbutils/src/main/java"/>
+	<classpathentry kind="src" path="commons-dbutils/src/test/java"/>
+	<classpathentry kind="src" path="project/src/main/java"/>
+	<classpathentry kind="src" path="project/src/test/java"/>
+	<classpathentry kind="lib" path="agent/target/agent-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="agent/target/original-agent-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="project/target/project-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="agent/bin"/>
+</classpath>

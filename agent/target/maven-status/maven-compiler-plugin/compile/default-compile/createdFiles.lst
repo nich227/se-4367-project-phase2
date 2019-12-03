@@ -1,6 +1,6 @@
-agent\Agent$1.class
-agent\ClassTransformVisitor.class
-agent\MethodTransformVisitor.class
-agent\Agent.class
-agent\CollectCoverage.class
-agent\JUnitListener.class
+agent/Agent.class
+agent/CollectCoverage.class
+agent/ClassTransformVisitor.class
+agent/Agent$1.class
+agent/MethodTransformVisitor.class
+agent/JUnitListener.class

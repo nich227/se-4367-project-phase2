@@ -29,9 +29,25 @@ public class CollectCoverage {
 			covered_lines.add(line);
 		}
 	}
+	
+	public static void addVariable(Integer var) {
+		System.out.println("Add variable int");
+	}
+	
+	public static void addVariable(Double var) {
+		System.out.println("Add variable double");
+	}
+	
+	public static void addVariable(Float var) {
+		System.out.println("Add variable float");
+	}
+	
+	public static void addVariable(Long var) {
+		System.out.println("Add variable long");
+	}
 
-	public static void addVariable(Object obj){
-		System.out.println(obj.getClass() + "Yeet");
+	public static void addVariable(Object var) {
+		System.out.println("Add variable obj");
 	}
 
 }
