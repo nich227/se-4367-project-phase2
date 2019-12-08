@@ -64,20 +64,25 @@ public class JUnitListener extends RunListener {
 				}
 			}
 		}
+
+		File fout2 = new File("Invariant-Trace.txt");
+		StringBuilder str_buildernew = new StringBuilder();
+		FileOutputStream fosnew = new FileOutputStream(fout2);
+		BufferedWriter bwnew = new BufferedWriter(new OutputStreamWriter(fosnew));
 		
-		str_builder.append("\n\n\n\n\n");
-		
-		str_builder.append("Possible invariants:\n");
+		str_buildernew.append("Possible invariants:\n");
 		for (String testCaseName : CollectCoverage.testVars.keySet()) {
-			str_builder.append(testCaseName + "\n");
+			str_buildernew.append(testCaseName + "\n");
 
 			for (Integer index : CollectCoverage.testVars.get(testCaseName).keySet()) {
-				str_builder.append(index + ":" + CollectCoverage.testVars.get(testCaseName).get(index) + "\n");
+				str_buildernew.append(index + ":" + CollectCoverage.testVars.get(testCaseName).get(index) + "\n");
 			}
 		}
 
 		bw.write(str_builder.toString());
 		bw.close();
+		bwnew.write(str_buildernew.toString());
+		bwnew.close();
 	}
 
 }

@@ -34,6 +34,8 @@ public class CollectCoverage {
 		}
 	}
 
+
+
 	public static void addVariable(Integer val, Integer var) {
 
 		// If the variable map hasn't been initialized or this variable has already been
@@ -90,6 +92,7 @@ public class CollectCoverage {
 	public static void addVariable(Object val, Integer var) {
 		// If the variable map hasn't been initialized or this variable has already been
 		// visited
+
 		if (variableMap == null || visitedVars == null || visitedVars.contains(var))
 			return;
 		visitedVars.add(var);
@@ -100,4 +103,7 @@ public class CollectCoverage {
 		}
 	}
 
+	public void addName(String name, Integer index){
+		System.out.println("Argument passed through and it is :"+ index);
+	}
 }

@@ -8,6 +8,7 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 	String mName;
 	int line;
+	String varName;
 
 	public MethodTransformVisitor(final MethodVisitor mv, String name) {
 		super(ASM5, mv);
@@ -44,6 +45,8 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 		super.visitLabel(label);
 	}
+
+
 
 	// Visits a variable instruction
 	@Override
@@ -86,4 +89,25 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
 		super.visitVarInsn(opcode, index);
 	}
+
+	//Local Variables
+	@Override
+	public void visitLocalVariable(String name, String desc,String signature, Label start, Label end, int index) {
+		if (name == null) {
+			super.visitLocalVariable(name,desc,signature,start,end,index);
+			return;
+		}
+
+		varName = name;
+		mv.visitLdcInsn(varName);
+		mv.visitLdcInsn(index);
+		mv.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+		mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addName",
+				"(Ljava/lang/String;Ljava/lang/Integer;)V", false);
+
+
+		super.visitLocalVariable(name, desc, signature, start, end, index);
+
+	}
+
 }
