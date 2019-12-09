@@ -1,0 +1,1777 @@
+Possible invariants:
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@7d8704ef
+3:[[Ljava.lang.String;@3333295a
+4:[[Ljava.lang.String;@3333295a
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 1 Query: select * from blah where ? = ? Parameters: [[unit], [test]]
+7:[[Ljava.lang.String;@3333295a
+8:2
+9:0
+10:[Ljava.lang.String;@3df4c14c
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 1 Query: select * from blah where ? = ? Parameters: [[unit], [test]]
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@158a8276
+3:conn
+4:[Ljava.lang.Object;@158a8276
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackNull
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseNull
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@3c3d9b6b
+3:conn
+4:[Ljava.lang.Object;@3c3d9b6b
+5:call
+6:3
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSetPmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:{call my_proc(?, ?)}
+3:org.apache.commons.dbutils.handlers.ArrayHandler@79d8407f
+4:[Ljava.lang.Object;@5fbe4146
+5:[Ljava.lang.Object;@5fbe4146
+6:call
+7:[[Ljava.lang.Object;@1e66f1f5]
+8:1
+9:results
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBytes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class [B
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeConnection
+1:Mock for Connection, hashCode: 1487500813
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullInt
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:int
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetByte
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:byte
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testBadPrepareConnection
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQueryDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:select * from blah where ? = ?
+3:org.apache.commons.dbutils.handlers.ArrayHandler@71e9ddb4
+4:[Ljava.lang.Object;@394df057
+5:[Ljava.lang.Object;@394df057
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@4961f6af
+3:[Ljava.lang.Object;@51399530
+4:conn
+5:[Ljava.lang.Object;@51399530
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: {call my_proc(?, ?)} Parameters: [unit]
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullParamsArgBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@5aebe890
+3:null
+4:null
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testColumnNameHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindMoreThanLocalColumns
+1:11
+2:java.util.ServiceLoader$1@65d09a04
+[TEST]org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:1.0
+[TEST]org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandlerTest:testMatch
+1:class org.apache.commons.dbutils.handlers.properties.TestEnum
+2:test
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchInsert
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.Object;@33c911a1
+3:[[Ljava.lang.Object;@33c911a1
+4:stmt
+5:[[Ljava.lang.Object;@33c911a1
+6:stmt
+7:[java.lang.Object@75db5df9, java.lang.Object@707194ba]
+8:[[Ljava.lang.Object;@33c911a1
+9:2
+10:0
+11:[Ljava.lang.Object;@1190200a
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@6a2f6f80
+3:[Ljava.lang.Object;@45b4c3a9
+4:[Ljava.lang.Object;@45b4c3a9
+5:[Ljava.lang.Object;@45b4c3a9
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@399c4be1
+3:[[Ljava.lang.String;@30633415
+4:[[Ljava.lang.String;@30633415
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 3 Query: select * from blah where ? = ? Parameters: [[unit, unit, unit], [test, test, test]]
+7:[[Ljava.lang.String;@30633415
+8:2
+9:0
+10:[Ljava.lang.String;@3ea4dc69
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 3 Query: select * from blah where ? = ? Parameters: [[unit, unit, unit], [test, test, test]]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteQueryException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@291caca8
+3:[Ljava.lang.Object;@4ae0381a
+4:[Ljava.lang.Object;@4ae0381a
+5:[Ljava.lang.Object;@4ae0381a
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [org.apache.commons.dbutils.handlers.ArrayHandler@4427cf36, unit, test]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@385e9564
+3:null
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyResultSet
+1:Mock for ResultSet, hashCode: 1536471117
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindsLocalPropertyHandler
+1:1
+2:java.util.ServiceLoader$1@8c3b9d
+3:org.apache.commons.dbutils.handlers.properties.TestPropertyHandler@4c39bec8
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetStatement
+1:Mock for Connection, hashCode: 63390
+2:Mock for ResultSet, hashCode: 2129144075
+3:Mock for Statement, hashCode: 525968792
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testLoadThrowsIllegalArgumentException
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+5:java.lang.IllegalArgumentException: e not found.
+6:java.lang.IllegalArgumentException: e not found.
+[TEST]org.apache.commons.dbutils.handlers.properties.PropertyHandlerTest:testServiceLoaderFindsMultipleRegistries
+1:1
+2:java.util.ServiceLoader$1@1e178745
+3:org.apache.commons.dbutils.handlers.properties.TestPropertyHandler@192c3f1e
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullString
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.lang.String
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testMatch
+1:class java.sql.Date
+2:Sun Dec 08 18:05:28 CST 2019
+3:java.sql.Date
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullCharacterStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.Reader
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyStatement
+1:Mock for Statement, hashCode: 649329985
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.String
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@7494f96a
+3:[Ljava.lang.Object;@561b6512
+4:conn
+5:[Ljava.lang.Object;@561b6512
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: {call my_proc(?, ?)} Parameters: []
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesWithOutUnderscores
+1:metaData
+2:[Ljava.beans.PropertyDescriptor;@2e377400
+3:3
+4:[I@1757cd72
+5:1
+6:three
+7:three
+8:0
+9:one
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@445b295b
+3:[Ljava.lang.Object;@49e5f737
+4:[Ljava.lang.Object;@49e5f737
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatchDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@5c671d7f
+3:java.util.concurrent.ThreadPoolExecutor@757277dc[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+4:[[Ljava.lang.String;@687e99d8
+5:stmt
+6:null
+7:[[Ljava.lang.String;@687e99d8
+8:2
+9:0
+10:[Ljava.lang.String;@e4487af
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollback
+1:Mock for Connection, hashCode: 1789718525
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeStatement
+1:Mock for Statement, hashCode: 210156003
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfTime
+1:class java.sql.Time
+2:Sun Dec 08 18:05:28 CST 2019
+3:java.sql.Time
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testMatchNegative
+1:class java.lang.Float
+2:class java.lang.Integer
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testURL
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.net.URL
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNoParamsUpdate
+1:org.apache.commons.dbutils.handlers.columns.TestColumnHandler@10aa41f2
+2:org.apache.commons.dbutils.QueryRunner@3af9c5b7
+3:[Ljava.lang.Object;@37271612
+4:[Ljava.lang.Object;@37271612
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullParamsArgBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:null
+3:conn
+4:null
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateResultSet
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullConnection
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetThrowingExceptionStatement
+1:Mock for Connection, hashCode: 249034932
+2:Mock for ResultSet, hashCode: 1278254413
+3:Mock for Statement, hashCode: 940584193
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesMixedCase
+1:metaData
+2:[Ljava.beans.PropertyDescriptor;@37883b97
+3:3
+4:[I@6ab778a
+5:1
+6:tHree
+7:tHree
+8:0
+9:one
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@10e31a9a
+3:conn
+4:[[Ljava.lang.String;@10e31a9a
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 3 Query: select * from blah where ? = ? Parameters: [[unit, unit, unit], [test, test, test]]
+7:[[Ljava.lang.String;@10e31a9a
+8:2
+9:0
+10:[Ljava.lang.String;@131774fe
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 3 Query: select * from blah where ? = ? Parameters: [[unit, unit, unit], [test, test, test]]
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToAnnotationField
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:[Ljava.beans.PropertyDescriptor;@4e3958e7
+5:1
+6:one
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateResultSetMetaData
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseWithException
+1:Mock for Connection, hashCode: 2012744708
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@1dac5ef
+3:[Ljava.lang.Object;@5c90e579
+4:conn
+5:[Ljava.lang.Object;@5c90e579
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@4218d6a3
+3:conn
+4:[Ljava.lang.Object;@4218d6a3
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testEmptyResultSet
+1:class java.lang.Object
+2:class org.apache.commons.dbutils.TestBean
+3:1
+4:null
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@58ea606c
+3:null
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToMap
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testFillStatementWithBean
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunnerTest$MyBean@6f45df59
+3:[Ljava.lang.String;@38e79ae3
+4:[Ljava.beans.PropertyDescriptor;@63070bab
+5:[Ljava.beans.PropertyDescriptor;@68e5eea7
+6:0
+7:a
+8:1
+9:[Ljava.beans.PropertyDescriptor;@63070bab
+10:4
+11:0
+12:java.beans.PropertyDescriptor[name=a; propertyType=int; readMethod=public int org.apache.commons.dbutils.QueryRunnerTest$MyBean.getA(); writeMethod=public void org.apache.commons.dbutils.QueryRunnerTest$MyBean.setA(int)]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullTimestamp
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Timestamp
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@291b4bf5
+3:[Ljava.lang.Object;@34a3d150
+4:conn
+5:[Ljava.lang.Object;@34a3d150
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBigDecimal
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.math.BigDecimal
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@2d2ffcb7
+3:org.apache.commons.dbutils.handlers.ArrayHandler@762ef0ea
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullClob
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Clob
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullResultSet
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandleToInterface
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:MockResultSetMetaData 838449246
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testEmptyBuilder
+1:null
+2:null
+3:null
+4:null
+5:null
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testBadPrepareConnection
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@424e1977
+3:java.util.concurrent.ThreadPoolExecutor@10d68fcd[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testMatch
+1:interface java.sql.SQLXML
+2:interface java.sql.SQLXML
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToMapOrdering
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testMatch
+1:class java.lang.Byte
+2:class java.lang.Byte
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@117e949d
+3:[Ljava.lang.Object;@6db9f5a4
+4:[Ljava.lang.Object;@6db9f5a4
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetLong
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:long
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.Byte
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@5f8edcc5
+3:conn
+4:[[Ljava.lang.String;@5f8edcc5
+5:stmt
+6:0
+7:[[Ljava.lang.String;@5f8edcc5
+8:2
+9:0
+10:[Ljava.lang.String;@7b02881e
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testStatementConfiguration
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:2
+3:3
+4:4
+5:5
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateConnection
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeResultSet
+1:Mock for ResultSet, hashCode: 515715487
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testBuilder
+1:1
+2:2
+3:3
+4:4
+5:5
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testMultipleWrappers
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetCharacterStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.Reader
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@3c0be339
+3:conn
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSetDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:{call my_proc(?, ?)}
+3:org.apache.commons.dbutils.handlers.ArrayHandler@15ca7889
+4:[Ljava.lang.Object;@7a675056
+5:[Ljava.lang.Object;@7a675056
+6:call
+7:[[Ljava.lang.Object;@1e66f1f5]
+8:1
+9:results
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdateDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@d21a74c
+3:java.util.concurrent.ThreadPoolExecutor@6e509ffa[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 3]
+4:[Ljava.lang.Object;@2898ac89
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseWithException
+1:Mock for Connection, hashCode: 1748876332
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:toString
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@799f10e1
+3:conn
+4:[[Ljava.lang.String;@799f10e1
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 1 Query: select * from blah where ? = ? Parameters: [[unit], [test]]
+7:[[Ljava.lang.String;@799f10e1
+8:2
+9:0
+10:[Ljava.lang.String;@4c371370
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 1 Query: select * from blah where ? = ? Parameters: [[unit], [test]]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBlob
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Blob
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.sql.Timestamp
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteWithResultSetException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@7eac9008
+3:[Ljava.lang.Object;@1fa121e2
+4:conn
+5:[Ljava.lang.Object;@1fa121e2
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: {call my_proc(?, ?)} Parameters: [org.apache.commons.dbutils.handlers.ArrayHandler@7eac9008, unit, test]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBigDecimal
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.math.BigDecimal
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdatePmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@68267da0
+3:java.util.concurrent.ThreadPoolExecutor@2638011[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 3]
+4:[Ljava.lang.Object;@6ff29830
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQueryPmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:select * from blah where ? = ?
+3:org.apache.commons.dbutils.handlers.ArrayHandler@6a2b953e
+4:[Ljava.lang.Object;@313b2ea6
+5:[Ljava.lang.Object;@313b2ea6
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchPmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:1
+3:conn
+4:[[Ljava.lang.String;@2f465398
+5:stmt
+6:null
+7:[[Ljava.lang.String;@2f465398
+8:2
+9:0
+10:[Ljava.lang.String;@548e6d58
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetTimestamp
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Timestamp
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietly
+1:Mock for Connection, hashCode: 1648001170
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullDate
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Date
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testMatch
+1:class java.lang.String
+2:class java.lang.String
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToProperties
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:[Ljava.beans.PropertyDescriptor;@a1cdc6d
+5:1
+6:one
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@175b9425
+3:null
+[TEST]org.apache.commons.dbutils.BaseTestCase:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandleToSuperClass
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:MockResultSetMetaData 838449246
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testMatch
+1:class java.sql.Timestamp
+2:class java.sql.Timestamp
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testMatch
+1:class java.lang.Short
+2:class java.lang.Short
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@3857f613
+3:conn
+4:[Ljava.lang.Object;@3857f613
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:conn
+3:null
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@3098cf3b
+3:null
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetObject
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.lang.Object
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@610f7aa
+3:conn
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecutePmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:{call my_proc(?, ?)}
+3:[Ljava.lang.Object;@6a03bcb1
+4:[Ljava.lang.Object;@6a03bcb1
+5:call
+6:3
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullStatement
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetRef
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Ref
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteBatchException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@3349e9bb
+3:conn
+4:[[Ljava.lang.String;@3349e9bb
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+7:[[Ljava.lang.String;@3349e9bb
+8:2
+9:0
+10:[Ljava.lang.String;@409bf450
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:null
+3:[Ljava.lang.Object;@21b2e768
+4:conn
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBoolean
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:boolean
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteUpdateException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@7334aada
+3:conn
+4:[Ljava.lang.Object;@7334aada
+5:stmt
+6:java.sql.SQLException:  Query: select * from blah where ? = ? Parameters: [unit, test]
+7:java.sql.SQLException
+8:java.sql.SQLException:  Query: select * from blah where ? = ? Parameters: [unit, test]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBinaryStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.InputStream
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseQuietly
+1:Mock for Connection, hashCode: 1462044018
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullStatement
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBytes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class [B
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:MockResultSetMetaData 838449246
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testConstructor
+1:1
+2:2
+3:3
+4:4
+5:5
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetTime
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Time
+[TEST]org.apache.commons.dbutils.OutParameterTest:testRegister
+1:4
+2:class java.lang.Number
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteUpdateException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@5609159b
+3:[Ljava.lang.Object;@48c964f3
+4:[Ljava.lang.Object;@48c964f3
+5:stmt
+6:java.sql.SQLException:  Query: select * from blah where ? = ? Parameters: [unit, test]
+7:java.sql.SQLException
+8:java.sql.SQLException:  Query: select * from blah where ? = ? Parameters: [unit, test]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnection
+1:Mock for Connection, hashCode: 555273695
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testColumnNameHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+6:null
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBoolean
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:boolean
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullHandlerQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@17a7f733
+3:null
+4:null
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@68567e20
+3:[Ljava.lang.Object;@6069db50
+4:conn
+5:[Ljava.lang.Object;@6069db50
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testColumnIndexHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testMatch
+1:class java.lang.Long
+2:class java.lang.Long
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVRowProcessor
+1:[Lorg.mockito.cglib.proxy.Callback;@76ed1b7c
+2:class org.apache.commons.dbutils.TestBean
+3:1
+4:null
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:interface java.sql.SQLXML
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testColumnIndexHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.BaseTestCase:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.OutParameterTest:testRegisterAlternateConstructor
+1:4
+2:class java.lang.Number
+3:42
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testLoad
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:null
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToArray
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullFloat
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:float
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@11fc564b
+3:[Ljava.lang.Object;@394a2528
+4:conn
+5:[Ljava.lang.Object;@394a2528
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdatePmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:update blah set ? = ?
+3:[Ljava.lang.Object;@6236eb5f
+4:[Ljava.lang.Object;@6236eb5f
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@7c1e2a9e
+3:[[Ljava.lang.String;@fa36558
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullByte
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:byte
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetClob
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Clob
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testMatch
+1:class java.lang.Boolean
+2:class java.lang.Boolean
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testInsertUsesGivenQueryRunner
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@672872e1
+3:org.apache.commons.dbutils.handlers.ArrayHandler@333baaeb
+4:[Ljava.lang.Object;@32910148
+5:[Ljava.lang.Object;@3f56875e
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@2b4bac49
+3:[Ljava.lang.Object;@6989da5e
+4:conn
+5:[Ljava.lang.Object;@6989da5e
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: {call my_proc(?, ?)} Parameters: [unit]
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateDriver
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testColumnNameHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVString
+1:[Lorg.mockito.cglib.proxy.Callback;@fd07cbb
+2:class org.apache.commons.dbutils.TestBean
+3:1
+4:id
+5:1
+[TEST]org.apache.commons.dbutils.BaseResultSetHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@3571b748
+3:[Ljava.lang.Object;@3e96bacf
+4:null
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:null
+3:conn
+4:null
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@484970b0
+3:[Ljava.lang.Object;@7e6f74c
+4:conn
+5:[Ljava.lang.Object;@7e6f74c
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: {call my_proc(?, ?)} Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testGetString
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@4470f8a6
+3:[Ljava.lang.Object;@12468a38
+4:conn
+5:[Ljava.lang.Object;@12468a38
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: {call my_proc(?, ?)} Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetShort
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:short
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@7c83dc97
+3:[[Ljava.lang.String;@7748410a
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandleToSuperClass
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfV
+1:[Lorg.mockito.cglib.proxy.Callback;@740773a3
+2:class org.apache.commons.dbutils.TestBean
+3:1
+4:null
+5:1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetDouble
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:double
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreatePreparedStatement
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testProcessWithToBean
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testAddBatchException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@37f1104d
+3:[[Ljava.lang.String;@f641756
+4:[[Ljava.lang.String;@f641756
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+7:[[Ljava.lang.String;@f641756
+8:2
+9:0
+10:[Ljava.lang.String;@1a3f8ca
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndClose
+1:Mock for Connection, hashCode: 1433666880
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@60015ef5
+3:conn
+4:[Ljava.lang.Object;@60015ef5
+5:call
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: {call my_proc(?, ?)} Parameters: []
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: {call my_proc(?, ?)} Parameters: []
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testMatch
+1:class java.lang.Float
+2:class java.lang.Float
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testProcessWithPopulateBean
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVInt
+1:[Lorg.mockito.cglib.proxy.Callback;@2f54a33d
+2:class org.apache.commons.dbutils.TestBean
+3:2
+4:null
+5:1
+[TEST]org.apache.commons.dbutils.DbUtilsTest:testCommitAndCloseQuietlyWithNullDoesNotThrowAnSQLException
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullTime
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Time
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteWithMultipleResultSets
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@1018bde2
+3:[Ljava.lang.Object;@65b3f4a4
+4:conn
+5:[Ljava.lang.Object;@65b3f4a4
+6:call
+7:[[Ljava.lang.Object;@1e66f1f5, [Ljava.lang.Object;@1e66f1f5, [Ljava.lang.Object;@1e66f1f5]
+8:1
+9:results
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@f2ff811
+3:[Ljava.lang.Object;@568ff82
+4:null
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndClose
+1:Mock for Connection, hashCode: 1355457888
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@2a266d09
+3:[Ljava.lang.Object;@5ab9e72c
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@186f8716
+3:[[Ljava.lang.String;@186f8716
+4:[[Ljava.lang.String;@186f8716
+5:stmt
+6:null
+7:[[Ljava.lang.String;@186f8716
+8:2
+9:0
+10:[Ljava.lang.String;@1d8bd0de
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullObject
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.lang.Object
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@45ca843
+3:[Ljava.lang.Object;@2b5b4fff
+4:[Ljava.lang.Object;@2b5b4fff
+5:[Ljava.lang.Object;@2b5b4fff
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:testLoadDriverReturnsFalse
+1:
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteBatchException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@11c9af63
+3:[[Ljava.lang.String;@10f4367f
+4:[[Ljava.lang.String;@10f4367f
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+7:[[Ljava.lang.String;@10f4367f
+8:2
+9:0
+10:[Ljava.lang.String;@1e33ca11
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindsLocalColumnHandler
+1:1
+2:java.util.ServiceLoader$1@757acd7b
+3:org.apache.commons.dbutils.handlers.columns.TestColumnHandler@36b4fe2a
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdateDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:update blah set ? = ?
+3:[Ljava.lang.Object;@574b560f
+4:[Ljava.lang.Object;@574b560f
+5:stmt
+6:0
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.OutParameterTest:testSetValue
+1:4
+2:class java.lang.Number
+3:42
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@ba54932
+3:[Ljava.lang.Object;@58ecacf2
+4:[Ljava.lang.Object;@58ecacf2
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testCreatesResultSetIteratorTakingThreeArgumentsAndCallsRemove
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetStatementThrowingException
+1:Mock for Connection, hashCode: 681008168
+2:Mock for ResultSet, hashCode: 960733886
+3:Mock for Statement, hashCode: 875917495
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.Integer
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToBeanList
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:MockResultSetMetaData 838449246
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullConnection
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullResultSet
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.Double
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQueryDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@157853da
+3:java.util.concurrent.ThreadPoolExecutor@71c3b41[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2]
+4:[Ljava.lang.Object;@236e3f4e
+5:[Ljava.lang.Object;@236e3f4e
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandleToInterface
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfTimestamp
+1:2019-12-08 18:05:28.549
+2:2019-12-08 18:05:28.549
+3:java.sql.Timestamp
+4:2019-12-08 18:05:28.549
+5:549000000
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodInsert
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:null
+3:[Ljava.lang.Object;@3cc1435c
+4:org.apache.commons.dbutils.handlers.ScalarHandler@6bf0219d
+5:[Ljava.lang.Object;@3cc1435c
+6:stmt
+7:1
+8:Mock for ResultSet, hashCode: 231786897
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyStatementThrowingException
+1:Mock for Statement, hashCode: 1595282218
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@69fb6037
+3:[Ljava.lang.Object;@36d585c
+4:conn
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateStatement
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToPropertiesWithOverrides
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:[Ljava.lang.String;@87a85e1
+5:MockResultSetMetaData 1729779847
+6:[Ljava.beans.PropertyDescriptor;@a1cdc6d
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testColumnIndexHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietlyWithException
+1:Mock for Connection, hashCode: 1431467659
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullShort
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:short
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullDouble
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:double
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQueryPmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@3c947bc5
+3:java.util.concurrent.ThreadPoolExecutor@609db43b[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 2]
+4:[Ljava.lang.Object;@55f616cf
+5:[Ljava.lang.Object;@55f616cf
+6:stmt
+7:results
+8:[Ljava.lang.Object;@1e66f1f5
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyResultSetThrowingException
+1:Mock for ResultSet, hashCode: 324457684
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@c03cf28
+3:[Ljava.lang.Object;@1329eff
+4:conn
+5:[Ljava.lang.Object;@1329eff
+6:call
+7:[[Ljava.lang.Object;@1e66f1f5]
+8:1
+9:results
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testMatchNegative
+1:class java.lang.Float
+2:null
+3:java.lang.Float
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBlob
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Blob
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfDate
+1:class java.sql.Date
+2:Sun Dec 08 18:05:28 CST 2019
+3:java.sql.Date
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteDefaultConstructor
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:{call my_proc(?, ?)}
+3:[Ljava.lang.Object;@6497b078
+4:[Ljava.lang.Object;@6497b078
+5:call
+6:3
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testRethrowThrowsRuntimeException
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:java.lang.RuntimeException: java.lang.Throwable
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@7a8c8dcf
+3:[Ljava.lang.Object;@5dda768f
+4:conn
+5:[Ljava.lang.Object;@5dda768f
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: {call my_proc(?, ?)} Parameters: [org.apache.commons.dbutils.handlers.ArrayHandler@7a8c8dcf, unit, test]
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetDate
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.sql.Date
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testMatch
+1:class java.lang.Integer
+2:class java.lang.Long
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testApplyType
+1:rs
+2:1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testAddBatchException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@6cf0e0ba
+3:conn
+4:[[Ljava.lang.String;@6cf0e0ba
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+7:[[Ljava.lang.String;@6cf0e0ba
+8:2
+9:0
+10:[Ljava.lang.String;@7d8995e
+11:java.sql.SQLException: Wrong number of parameters: expected 0, was given 2 Query: select * from blah where ? = ? Parameters: [[unit, unit], [test, test]]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@41c2284a
+3:[Ljava.lang.Object;@5c80c783
+4:[Ljava.lang.Object;@5c80c783
+5:[Ljava.lang.Object;@5c80c783
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [unit, test, fail]
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietlyNull
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullRef
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:interface java.sql.Ref
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetInt
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:int
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNoParamsQuery
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@53aad5d5
+3:[Ljava.lang.Object;@46fa7c39
+4:[Ljava.lang.Object;@46fa7c39
+5:[Ljava.lang.Object;@46fa7c39
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:0
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlExecute
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@1fb700ee
+3:conn
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testEmptyResultSetHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testMatch
+1:class java.lang.Double
+2:class java.lang.Double
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testNext
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:isLast
+5:0
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetFloat
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:float
+[TEST]org.apache.commons.dbutils.BaseResultSetHandlerTest:testCheckDataSizes
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullParamsBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@4f67eb2a
+3:[[Ljava.lang.String;@4a668b6e
+4:[[Ljava.lang.String;@4a668b6e
+5:stmt
+6:0
+7:[[Ljava.lang.String;@4a668b6e
+8:2
+9:0
+10:[Ljava.lang.String;@5f683daf
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindMoreThanLocalProperties
+1:3
+2:java.util.ServiceLoader$1@78ffe6dc
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.Float
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@8317c52
+3:[[Ljava.lang.String;@76f2bbc1
+4:[[Ljava.lang.String;@76f2bbc1
+5:stmt
+6:null
+7:[[Ljava.lang.String;@76f2bbc1
+8:2
+9:0
+10:[Ljava.lang.String;@68e965f5
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToBean
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+5:1
+6:null
+7:null
+8:0
+9:java.beans.PropertyDescriptor[name=class; propertyType=class java.lang.Class; readMethod=public final native java.lang.Class java.lang.Object.getClass()]
+10:null
+11:class
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetString
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.lang.String
+[TEST]org.apache.commons.dbutils.handlers.properties.PropertyHandlerTest:testFoundMoreThanLocal
+1:3
+2:java.util.ServiceLoader$1@6f27a732
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseQuietlyWithException
+1:Mock for Connection, hashCode: 1819776360
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteQueryException
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@5bda8e08
+3:[Ljava.lang.Object;@3eb738bb
+4:conn
+5:[Ljava.lang.Object;@3eb738bb
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 3 Query: select * from blah where ? = ? Parameters: [org.apache.commons.dbutils.handlers.ArrayHandler@5bda8e08, unit, test]
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateCallableStatement
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testFillStatementWithBeanNullNames
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunnerTest$MyBean@f381794
+3:[Ljava.lang.String;@2cdd0d4b
+4:[Ljava.beans.PropertyDescriptor;@63070bab
+5:[Ljava.beans.PropertyDescriptor;@7e9131d5
+6:0
+7:a
+8:1
+9:[Ljava.beans.PropertyDescriptor;@63070bab
+10:4
+11:0
+12:java.beans.PropertyDescriptor[name=a; propertyType=int; readMethod=public int org.apache.commons.dbutils.QueryRunnerTest$MyBean.getA(); writeMethod=public void org.apache.commons.dbutils.QueryRunnerTest$MyBean.setA(int)]
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesColumnLabelIsNull
+1:metaData
+2:[Ljava.beans.PropertyDescriptor;@2e1d27ba
+3:1
+4:[I@61d6015a
+5:1
+6:null
+7:juhu
+8:0
+9:one
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsExecuteWithResultSet
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.handlers.ArrayHandler@2525ff7e
+3:[Ljava.lang.Object;@524d6d96
+4:conn
+5:[Ljava.lang.Object;@524d6d96
+6:stmt
+7:null
+9:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+10:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: {call my_proc(?, ?)} Parameters: []
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullAsciiStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.InputStream
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@152aa092
+3:[Ljava.lang.Object;@28d79d41
+4:[Ljava.lang.Object;@28d79d41
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 1 Query: select * from blah where ? = ? Parameters: [unit]
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatchPmdTrue
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:org.apache.commons.dbutils.QueryRunner@44a7bfbc
+3:java.util.concurrent.ThreadPoolExecutor@4ef37659[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+4:[[Ljava.lang.String;@776b83cc
+5:stmt
+6:null
+7:[[Ljava.lang.String;@776b83cc
+8:2
+9:0
+10:[Ljava.lang.String;@37858383
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testHandle
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testMatchNegative
+1:class java.lang.Integer
+2:class java.lang.Short
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatch
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[[Ljava.lang.String;@4e268090
+3:conn
+4:[[Ljava.lang.String;@4e268090
+5:stmt
+6:null
+7:[[Ljava.lang.String;@4e268090
+8:2
+9:0
+10:[Ljava.lang.String;@1bb266b3
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetAsciiStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.InputStream
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesWithUnderscores
+1:metaData
+2:[Ljava.beans.PropertyDescriptor;@306cf3ea
+3:3
+4:[I@2beee7ff
+5:1
+6:t_h_r_e_e
+7:three
+8:0
+9:one
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionThrowingException
+1:Mock for Connection, hashCode: 1362546706
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsUpdate
+1:org.apache.commons.dbutils.BasicRowProcessor@17f7cd29
+2:[Ljava.lang.Object;@5939a379
+3:conn
+4:[Ljava.lang.Object;@5939a379
+5:stmt
+6:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+7:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0
+8:java.sql.SQLException: Wrong number of parameters: expected 2, was given 0 Query: select * from blah where ? = ? Parameters: []
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionThrowingExceptionResultSetStatement
+1:Mock for Connection, hashCode: 236840983
+2:Mock for ResultSet, hashCode: 1376790324
+3:Mock for Statement, hashCode: 893504292
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBinaryStream
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:class java.io.InputStream
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testResultSets
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testGetObject
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:next
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullLong
+1:[[Ljava.lang.Object;@13b6aecc
+2:[[Ljava.lang.Object;@13b6aecc
+3:[]
+4:long

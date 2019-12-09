@@ -1,0 +1,13 @@
+Possible invariants Names:
+[TEST]project.StuffTest:twoTest
+1:1
+2:1
+[TEST]project.StuffTest:multiTest
+1 : x : I Value: 2
+2 : guess : I Value: 1
+[TEST]project.StuffTest:OneTest
+1:0
+2:1
+[TEST]project.StuffTest:testStuff
+1:0
+2:1

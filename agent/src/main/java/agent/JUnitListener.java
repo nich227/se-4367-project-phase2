@@ -18,9 +18,13 @@ public class JUnitListener extends RunListener {
 		if (CollectCoverage.testCases == null) {
 			CollectCoverage.testCases = new HashMap<>();
 		}
-		
-		if(CollectCoverage.testVars == null) {
-			CollectCoverage.testVars = new HashMap<>();
+
+		if(CollectCoverage.testVars == null){
+		   CollectCoverage.testVars = new HashMap<>();
+		}
+
+		if (CollectCoverage.testFinal == null){
+			CollectCoverage.testFinal = new HashMap<>();
 		}
 	}
 
@@ -30,6 +34,7 @@ public class JUnitListener extends RunListener {
 		CollectCoverage.linesCovered = new HashMap<>();
 		CollectCoverage.visitedVars = new HashSet<>();
 		CollectCoverage.variableMap = new HashMap<>();
+		CollectCoverage.variableName = new HashMap<>();
 	}
 
 	public void testFailure(Failure failure) throws Exception {
@@ -40,6 +45,7 @@ public class JUnitListener extends RunListener {
 		System.out.println("Finished - " + description.getMethodName());
 		CollectCoverage.testCases.put(CollectCoverage.testName, CollectCoverage.linesCovered);
 		CollectCoverage.testVars.put(CollectCoverage.testName, CollectCoverage.variableMap);
+		CollectCoverage.testFinal.put(CollectCoverage.testName, CollectCoverage.variableName);
 	}
 
 	public void testRunFinished(Result result) throws IOException {
@@ -79,10 +85,34 @@ public class JUnitListener extends RunListener {
 			}
 		}
 
+		File foutfile = new File("Name-Trace.txt");
+		StringBuilder str_test = new StringBuilder();
+		FileOutputStream foutcheck = new FileOutputStream(foutfile);
+		BufferedWriter bwnewtest = new BufferedWriter(new OutputStreamWriter(foutcheck));
+
+		str_test.append("Possible invariants Names:\n");
+		for (String testCaseName : CollectCoverage.testFinal.keySet()) {
+			str_test.append(testCaseName + "\n");
+
+			for (Integer ind : CollectCoverage.testVars.get(testCaseName).keySet()) {
+			     if(CollectCoverage.testFinal.get(testCaseName).containsKey(ind)){
+			     	str_test.append(ind + " : " + CollectCoverage.testFinal.get(testCaseName).get(ind) + " Value: "+ CollectCoverage.testVars.get(testCaseName).get(ind)+ "\n");
+
+				}
+			     else{
+			     	str_test.append(ind + ":" + CollectCoverage.testVars.get(testCaseName).get(ind) + "\n");
+
+			     }
+
+			}
+		}
+
 		bw.write(str_builder.toString());
 		bw.close();
 		bwnew.write(str_buildernew.toString());
 		bwnew.close();
+		bwnewtest.write(str_test.toString());
+		bwnewtest.close();
 	}
 
 }

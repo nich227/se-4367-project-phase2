@@ -3,6 +3,9 @@ package agent;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
+import java.util.HashMap;
+import java.util.Set;
+
 
 class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 
@@ -93,18 +96,21 @@ class MethodTransformVisitor extends MethodVisitor implements Opcodes {
 	//Local Variables
 	@Override
 	public void visitLocalVariable(String name, String desc,String signature, Label start, Label end, int index) {
-		if (name == null) {
-			super.visitLocalVariable(name,desc,signature,start,end,index);
-			return;
+        if(name.equals("this")){
+        	super.visitLocalVariable(name, desc,signature, start,end, index);
+        	return;
 		}
 
+		CollectCoverage cls = new CollectCoverage();
+		cls.addName(name, desc, index);
 		varName = name;
-		mv.visitLdcInsn(varName);
+		//System.out.println("Check" +name + "Index: " + index);
+		//mv.visitLdcInsn(varName);
+		//mv.visitMethodInsn(INVOKESTATIC, "java/lang/String", "valueOf", "(I)Ljava/lang/Sting;", false);
 		mv.visitLdcInsn(index);
-		mv.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
-		mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addName",
-				"(Ljava/lang/String;Ljava/lang/Integer;)V", false);
-
+		//mv.visitMethodInsn(INVOKESTATIC, "java/lang/Integer", "valueOf", "(I)Ljava/lang/Integer;", false);
+		//mv.visitMethodInsn(INVOKESTATIC, "agent/CollectCoverage", "addName",
+				//"(Ljava/lang/String;Ljava/lang/Integer;)V", false);
 
 		super.visitLocalVariable(name, desc, signature, start, end, index);
 

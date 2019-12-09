@@ -14,6 +14,8 @@ public class CollectCoverage {
 	public static HashMap<Integer, Object> variableMap;
 	public static Set<Integer> visitedVars;
 	public static HashMap<String, HashMap<Integer, Object>> testVars;
+	public static HashMap<Integer, String> variableName;
+	public static HashMap<String, HashMap<Integer, String>> testFinal;
 
 	public static void addCoveredLine(String name, Integer line) {
 
@@ -103,7 +105,15 @@ public class CollectCoverage {
 		}
 	}
 
-	public void addName(String name, Integer index){
-		System.out.println("Argument passed through and it is :"+ index);
+	public static void addName(String name, String desc,  Integer index){
+		System.out.println(visitedVars.contains(index));
+		if (variableName == null || visitedVars == null || visitedVars.contains(index))
+			return;
+
+		String var = name+" : "+desc;
+		if (variableName.get(index) == null) {
+			variableName.put(index, var);
+		}
+		//System.out.println("Variable Name is: " +name + " Index value is: "+ index + "description: "+ desc );
 	}
 }

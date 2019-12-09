@@ -1,0 +1,563 @@
+Possible invariants Names:
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsBatch
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdate
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackNull
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseNull
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecute
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSetPmdTrue
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBytes
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeConnection
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testResultSets
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullInt
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetByte
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testBadPrepareConnection
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQueryDefaultConstructor
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullParamsArgBatch
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testColumnNameHandle
+rs : Ljava/sql/ResultSet; : 1
+columnName : Ljava/lang/String; : 1
+columnIndex : I : 1
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindMoreThanLocalColumns
+[TEST]org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.handlers.properties.StringEnumPropertyHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchInsert
+rs : Ljava/sql/ResultSet; : 1
+objects : Ljava/util/List; : 2
+this$0 : Lorg/apache/commons/dbutils/QueryRunnerTest; : 1
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQuery
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testHandle
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 1
+rows : Ljava/util/List; : 2
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsBatch
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteQueryException
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlUpdate
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyResultSet
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindsLocalPropertyHandler
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetStatement
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testLoadThrowsIllegalArgumentException
+[TEST]org.apache.commons.dbutils.handlers.properties.PropertyHandlerTest:testServiceLoaderFindsMultipleRegistries
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullString
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullCharacterStream
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyStatement
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsExecute
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesWithOutUnderscores
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionQuery
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatchDefaultConstructor
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollback
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeStatement
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfTime
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testURL
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNoParamsUpdate
+e : Ljava/lang/Exception; : 2
+stmt : Ljava/sql/CallableStatement; : 5
+e : Ljava/lang/reflect/InvocationTargetException; : 5
+e : Ljava/sql/SQLException; : 7
+method : Ljava/lang/reflect/Method; : 4
+result : [Ljava/lang/Object; : 4
+stmtConfig : Lorg/apache/commons/dbutils/StatementConfiguration; : 1
+stmt : Ljava/sql/Statement; : 0
+classLoader : Ljava/lang/ClassLoader; : 0
+ds : Ljavax/sql/DataSource; : 1
+value : Ljava/lang/Object; : 8
+beanInfo : Ljava/beans/BeanInfo; : 2
+driverClass : Ljava/lang/Class; : 3
+generatedKeys : Ljava/lang/Object; : 7
+firstParam : Ljava/lang/Class; : 5
+sql : Ljava/lang/String; : 2
+rows : I : 6
+setter : Ljava/lang/reflect/Method; : 4
+primitiveValueType : Ljava/lang/Object; : 4
+propertyColumnName : Ljava/lang/String; : 11
+moreResultSets : Z : 8
+parameter : Ljava/lang/Class; : 1
+typeField : Ljava/lang/reflect/Field; : 3
+e : Ljava/lang/RuntimeException; : 2
+handler : Lorg/apache/commons/dbutils/PropertyHandler; : 7
+rsh : Lorg/apache/commons/dbutils/ResultSetHandler; : 4
+e : Ljava/lang/IllegalAccessException; : 5
+target : Ljava/lang/Object; : 1
+tsValue : Ljava/sql/Timestamp; : 4
+next : Ljava/sql/SQLException; : 2
+cols : I : 0
+targetType : Ljava/lang/String; : 3
+type : Ljava/lang/Class; : 2
+param : Ljava/lang/Object; : 3
+driverConstructor : Ljava/lang/reflect/Constructor; : 4
+e : Ljava/lang/IllegalArgumentException; : 5
+column : Lorg/apache/commons/dbutils/annotations/Column; : 10
+isConstructorAccessible : Z : 5
+valueType : Ljava/lang/Class; : 2
+retval : Ljava/lang/Object; : 4
+result : Ljava/lang/Object; : 8
+propertyName : Ljava/lang/String; : 7
+col : I : 5
+rsmd : Ljava/sql/ResultSetMetaData; : 2
+columnToProperty : [I : 6
+convert : Lorg/apache/commons/dbutils/BeanProcessor; : 1
+resultSet : Ljava/sql/ResultSet; : 8
+loadedClass : Ljava/lang/Class; : 2
+meta : Ljava/sql/ResultSetMetaData; : 2
+closeConn : Z : 2
+props : [Ljava/beans/PropertyDescriptor; : 4
+rs : Ljava/sql/ResultSet; : 1
+index : I : 2
+columnToPropertyOverrides : Ljava/util/Map; : 1
+driverClassName : Ljava/lang/String; : 0
+param : [Ljava/lang/Object; : 10
+c : Ljava/lang/Class; : 1
+bean : Ljava/lang/Object; : 3
+handler : Lorg/apache/commons/dbutils/ColumnHandler; : 6
+targetType : Ljava/lang/Class; : 1
+pmdKnownBroken : Z : 1
+stmt : Ljava/sql/PreparedStatement; : 5
+params : [Ljava/lang/Object; : 3
+rows : [I : 6
+columnName : Ljava/lang/String; : 6
+driver : Ljava/sql/Driver; : 6
+params : [[Ljava/lang/Object; : 3
+prop : Ljava/beans/PropertyDescriptor; : 6
+e : Ljava/beans/IntrospectionException; : 3
+conn : Ljava/sql/Connection; : 1
+result : Ljava/util/Map; : 4
+pw : Ljava/io/PrintWriter; : 1
+nanos : I : 5
+i : I : 5
+results : Ljava/util/List; : 3
+propType : Ljava/lang/Class; : 7
+columnIndex : I : 2
+e : Ljava/lang/InstantiationException; : 2
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullParamsArgBatch
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateResultSet
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullConnection
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetThrowingExceptionStatement
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesMixedCase
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsBatch
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToAnnotationField
+three : Ljava/lang/String; : 1
+two : Ljava/lang/String; : 1
+one : Ljava/lang/String; : 1
+four : Ljava/lang/String; : 1
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateResultSetMetaData
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseWithException
+cols : I : 3
+propName : Ljava/lang/String; : 9
+generousColumnName : Ljava/lang/String; : 7
+col : I : 5
+columnName : Ljava/lang/String; : 6
+rsmd : Ljava/sql/ResultSetMetaData; : 1
+props : [Ljava/beans/PropertyDescriptor; : 2
+columnToProperty : [I : 4
+i : I : 8
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQuery
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsUpdate
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testEmptyResultSet
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionBatch
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToMap
+realKey : Ljava/lang/Object; : 2
+x0 : I : 1
+m : Ljava/util/Map; : 1
+initialCapacity : I : 1
+oldKey : Ljava/lang/Object; : 3
+key : Ljava/lang/Object; : 1
+oldValue : Ljava/lang/Object; : 4
+entry : Ljava/util/Map$Entry; : 3
+x1 : Lorg/apache/commons/dbutils/BasicRowProcessor$1; : 2
+value : Ljava/lang/Object; : 2
+key : Ljava/lang/String; : 1
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testFillStatementWithBean
+a : I : 1
+b : D : 1
+c : Ljava/lang/String; : 1
+this$0 : Lorg/apache/commons/dbutils/QueryRunnerTest; : 1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullTimestamp
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsQuery
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testCheckDataSizes
+index : I : 2
+stmt : Ljava/sql/CallableStatement; : 1
+sqlType : I : 1
+javaType : Ljava/lang/Class; : 2
+object : Ljava/lang/Object; : 3
+value : Ljava/lang/Object; : 3
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBigDecimal
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlQuery
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullClob
+param1 : I : 3
+length : J : 3
+str : Ljava/lang/String; : 1
+clob : Ljava/sql/Clob; : 1
+offset : I : 4
+len : J : 1
+param : J : 1
+pos : J : 1
+len : I : 5
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullResultSet
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandleToInterface
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 2
+type : Ljava/lang/Class; : 1
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testEmptyBuilder
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testBadPrepareConnection
+[TEST]org.apache.commons.dbutils.handlers.columns.SQLXMLColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToMapOrdering
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdate
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetLong
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullParamsBatch
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testStatementConfiguration
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateConnection
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeResultSet
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testBuilder
+fetchSize : Ljava/lang/Integer; : 1
+fetchDirection : Ljava/lang/Integer; : 1
+maxFieldSize : Ljava/lang/Integer; : 1
+maxRows : Ljava/lang/Integer; : 1
+queryTimeout : Ljava/lang/Integer; : 1
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testMultipleWrappers
+rs : Ljava/sql/ResultSet; : 0
+proxy : Ljava/lang/Object; : 1
+method : Ljava/lang/reflect/Method; : 2
+result : Ljava/lang/Object; : 4
+args : [Ljava/lang/Object; : 3
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetCharacterStream
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlBatch
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSetDefaultConstructor
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdateDefaultConstructor
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseWithException
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsBatch
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBlob
+blob : Ljava/sql/Blob; : 1
+param1 : I : 3
+length : J : 3
+offset : I : 4
+values : [B : 1
+bytes : [B : 3
+len : J : 1
+param : J : 1
+pos : J : 1
+len : I : 5
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteWithResultSetException
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBigDecimal
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodUpdatePmdTrue
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodQueryPmdTrue
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchPmdTrue
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetTimestamp
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testResultSets
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietly
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullDate
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToProperties
+three : Ljava/lang/String; : 1
+two : Ljava/lang/String; : 1
+one : Ljava/lang/String; : 1
+four : Ljava/lang/String; : 1
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionUpdate
+[TEST]org.apache.commons.dbutils.BaseTestCase:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandleToSuperClass
+[TEST]org.apache.commons.dbutils.handlers.columns.TimestampColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsUpdate
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlUpdate
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionExecute
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetObject
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlQuery
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecutePmdTrue
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullStatement
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetRef
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteBatchException
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBoolean
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteUpdateException
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBinaryStream
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseQuietly
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullStatement
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBytes
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.StatementConfigurationTest:testConstructor
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetTime
+[TEST]org.apache.commons.dbutils.OutParameterTest:testRegister
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteUpdateException
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnection
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testColumnNameHandle
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 1
+columnName : Ljava/lang/String; : 1
+columnIndex : I : 1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullBoolean
+nullFloat : F : 1
+nullBinaryStream : Ljava/io/InputStream; : 1
+method : Ljava/lang/reflect/Method; : 2
+args : [Ljava/lang/Object; : 3
+nullInt : I : 1
+nullAsciiStream : Ljava/io/InputStream; : 1
+nullByte : B : 1
+nullBlob : Ljava/sql/Blob; : 1
+rs : Ljava/sql/ResultSet; : 0
+nullMethod : Ljava/lang/reflect/Method; : 5
+copy : [B : 1
+proxy : Ljava/lang/Object; : 1
+nullClob : Ljava/sql/Clob; : 1
+nullDate : Ljava/sql/Date; : 1
+returnType : Ljava/lang/Class; : 4
+nullBytes : [B : 1
+result : Ljava/lang/Object; : 4
+nullDouble : D : 1
+nullBoolean : Z : 1
+nullBigDecimal : Ljava/math/BigDecimal; : 1
+nullCharacterStream : Ljava/io/Reader; : 1
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullHandlerQuery
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsQuery
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testColumnIndexHandle
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVRowProcessor
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testHandle
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 1
+[TEST]org.apache.commons.dbutils.handlers.columns.ShortColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testColumnIndexHandle
+[TEST]org.apache.commons.dbutils.BaseTestCase:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.OutParameterTest:testRegisterAlternateConstructor
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testLoad
+in : Ljava/io/InputStream; : 3
+hashMap : Ljava/util/HashMap; : 3
+props : Ljava/util/Properties; : 2
+path : Ljava/lang/String; : 1
+queryMap : Ljava/util/Map; : 2
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToArray
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullFloat
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsQuery
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdatePmdTrue
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullSqlBatch
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullByte
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetClob
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testHandle
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 1
+[TEST]org.apache.commons.dbutils.handlers.columns.BooleanColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testInsertUsesGivenQueryRunner
+fetchSize : Ljava/lang/Integer; : 2
+fetchDirection : Ljava/lang/Integer; : 1
+maxFieldSize : Ljava/lang/Integer; : 3
+maxRows : Ljava/lang/Integer; : 4
+queryTimeout : Ljava/lang/Integer; : 5
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooFewParamsExecute
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateDriver
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testColumnNameHandle
+rs : Ljava/sql/ResultSet; : 1
+columnName : Ljava/lang/String; : 1
+columnIndex : I : 1
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVString
+[TEST]org.apache.commons.dbutils.BaseResultSetHandlerTest:testResultSets
+isNull : Ljava/lang/Object; : 1
+rows : [[Ljava/lang/Object; : 1
+methodName : Ljava/lang/String; : 4
+c : I : 3
+method : Ljava/lang/reflect/Method; : 2
+e : Ljava/lang/NumberFormatException; : 3
+args : [Ljava/lang/Object; : 1
+columnName : Ljava/lang/String; : 1
+empty : Ljava/util/List; : 3
+proxy : Ljava/lang/Object; : 1
+metaData : Ljava/sql/ResultSetMetaData; : 0
+i : I : 2
+obj : Ljava/lang/Object; : 2
+columnIndex : I : 1
+[TEST]org.apache.commons.dbutils.QueryLoaderTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionQuery
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerQuery
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.columns.StringColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsExecute
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testGetString
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testTooManyParamsExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetShort
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionBatch
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandleToSuperClass
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfV
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetDouble
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testResultSets
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreatePreparedStatement
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testProcessWithToBean
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testAddBatchException
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndClose
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testCheckDataSizes
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 2
+result : Ljava/util/Map; : 2
+type : Ljava/lang/Class; : 1
+columnName : Ljava/lang/String; : 2
+columnIndex : I : 2
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullHandlerExecute
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testProcessWithPopulateBean
+[TEST]org.apache.commons.dbutils.handlers.MapListHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.BeanMapHandlerTest:testBeanMapHandlerClassOfVInt
+[TEST]org.apache.commons.dbutils.DbUtilsTest:testCommitAndCloseQuietlyWithNullDoesNotThrowAnSQLException
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullTime
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteWithMultipleResultSets
+invocation : Lorg/mockito/invocation/InvocationOnMock; : 1
+this$0 : Lorg/apache/commons/dbutils/QueryRunnerTest; : 1
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullConnectionExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndClose
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullConnectionUpdate
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatchDefaultConstructor
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullObject
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsQuery
+[TEST]org.apache.commons.dbutils.DbUtilsTest:testLoadDriverReturnsFalse
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testExecuteBatchException
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindsLocalColumnHandler
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodUpdateDefaultConstructor
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.OutParameterTest:testSetValue
+proxy : Ljava/lang/Object; : 1
+method : Ljava/lang/reflect/Method; : 2
+args : [Ljava/lang/Object; : 3
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsUpdate
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testCreatesResultSetIteratorTakingThreeArgumentsAndCallsRemove
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionResultSetStatementThrowingException
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.handlers.columns.FloatColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.handlers.BeanListHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.handlers.MapHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToBeanList
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyNullConnection
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeNullResultSet
+[TEST]org.apache.commons.dbutils.handlers.columns.ByteColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQueryDefaultConstructor
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandleToInterface
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 2
+type : Ljava/lang/Class; : 1
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfTimestamp
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodInsert
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyStatementThrowingException
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateStatement
+[TEST]org.apache.commons.dbutils.BeanProcessorTest:testMapColumnToPropertiesWithOverrides
+[TEST]org.apache.commons.dbutils.handlers.ColumnListHandlerTest:testColumnIndexHandle
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietlyWithException
+[TEST]org.apache.commons.dbutils.handlers.BeanHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullShort
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullDouble
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodQueryPmdTrue
+this$0 : Lorg/apache/commons/dbutils/AsyncQueryRunner; : 1
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyResultSetThrowingException
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBlob
+[TEST]org.apache.commons.dbutils.handlers.properties.DatePropertyHandlerTest:testApplyTypeOfDate
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodExecuteDefaultConstructor
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testRethrowThrowsRuntimeException
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteException
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetDate
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.handlers.columns.IntegerColumnHandlerTest:testApplyType
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testAddBatchException
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooManyParamsQuery
+[TEST]org.apache.commons.dbutils.DbUtilsTest:rollbackAndCloseQuietlyNull
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullRef
+map : Ljava/util/Map; : 1
+value : Ljava/lang/Object; : 1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetInt
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNoParamsQuery
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNullSqlExecute
+[TEST]org.apache.commons.dbutils.handlers.ArrayListHandlerTest:testEmptyResultSetHandle
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testMatch
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testNext
+rs : Ljava/sql/ResultSet; : 1
+convert : Lorg/apache/commons/dbutils/RowProcessor; : 2
+e : Ljava/sql/SQLException; : 1
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetFloat
+[TEST]org.apache.commons.dbutils.BaseResultSetHandlerTest:testCheckDataSizes
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testNullParamsBatch
+[TEST]org.apache.commons.dbutils.ServiceLoaderTest:testFindMoreThanLocalProperties
+[TEST]org.apache.commons.dbutils.handlers.columns.DoubleColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatch
+[TEST]org.apache.commons.dbutils.handlers.KeyedHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.BasicRowProcessorTest:testToBean
+[TEST]org.apache.commons.dbutils.handlers.ArrayHandlerTest:testResultSets
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetString
+[TEST]org.apache.commons.dbutils.handlers.properties.PropertyHandlerTest:testFoundMoreThanLocal
+[TEST]org.apache.commons.dbutils.DbUtilsTest:commitAndCloseQuietlyWithException
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testExecuteQueryException
+[TEST]org.apache.commons.dbutils.ProxyFactoryTest:testCreateCallableStatement
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testFillStatementWithBeanNullNames
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesColumnLabelIsNull
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsExecuteWithResultSet
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullAsciiStream
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testTooFewParamsUpdate
+[TEST]org.apache.commons.dbutils.AsyncQueryRunnerTest:testGoodBatchPmdTrue
+columnLabels : [Ljava/lang/String; : 2
+proxy : Ljava/lang/Object; : 1
+methodName : Ljava/lang/String; : 4
+columnNames : [Ljava/lang/String; : 0
+method : Ljava/lang/reflect/Method; : 2
+col : I : 5
+type : Ljava/lang/Class; : 1
+args : [Ljava/lang/Object; : 3
+handler : Ljava/lang/reflect/InvocationHandler; : 2
+[TEST]org.apache.commons.dbutils.handlers.ScalarHandlerTest:testHandle
+[TEST]org.apache.commons.dbutils.handlers.columns.LongColumnHandlerTest:testMatchNegative
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testGoodBatch
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetAsciiStream
+[TEST]org.apache.commons.dbutils.GenerousBeanProcessorTest:testMapColumnsToPropertiesWithUnderscores
+two : I : 1
+one : Ljava/lang/String; : 1
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionThrowingException
+[TEST]org.apache.commons.dbutils.QueryRunnerTest:testNoParamsUpdate
+[TEST]org.apache.commons.dbutils.DbUtilsTest:closeQuietlyConnectionThrowingExceptionResultSetStatement
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testGetBinaryStream
+[TEST]org.apache.commons.dbutils.ResultSetIteratorTest:testResultSets
+[TEST]org.apache.commons.dbutils.wrappers.StringTrimmedResultSetTest:testGetObject
+[TEST]org.apache.commons.dbutils.wrappers.SqlNullCheckedResultSetTest:testSetNullLong
