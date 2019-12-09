@@ -106,7 +106,6 @@ public class CollectCoverage {
 	}
 
 	public static void addName(String name, String desc,  Integer index){
-		System.out.println(visitedVars.contains(index));
 		if (variableName == null || visitedVars == null || visitedVars.contains(index))
 			return;
 
