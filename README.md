@@ -1,4 +1,4 @@
-# SE 4367 Project Phase 2
+# SE 4367 Course Project (Phase 2)
 
 ## Description:
 Augment the coverage collection tool implemented in Phase-1 to trace more
